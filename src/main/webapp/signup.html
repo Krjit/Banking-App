@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		.box {
+			width: 100%;
+		}
+
+		button {
+			display: inline-block;
+			background-color: blue;
+			color: #fff;
+			padding: 8px 15px;
+			border-radius: 5px;
+			font-weight: 600;
+		}
+
+		.sub_cal_btn {
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		.radio_btns {
+			display: flex;
+			justify-content: space-between
+		}
+	</style>
+</head>
+
+
+<body>
+	<h1 style="text-align: center;">Sign Up</h1>
+	<form action="Customer_signup" style="border:2px red solid; padding:35px; width:30%; margin:0px auto;">
+		<div style="margin: 0px auto;">
+			Name: <input class="box" type="text" placeholder="Enter name" name="name">
+			<br> <br>
+			Password: <input class="box" type="password" placeholder="Enter password" name="pwd">
+			<br> <br>
+			Mobile No.: <input class="box" type="tel" placeholder="Enter mobile number" name="mob">
+			<br> <br>
+			Email id: <input class="box" type="email" placeholder="Enter email" name="email">
+			<br> <br>
+			Gender:
+			<div class="radio_btns">
+				<div>
+					<input type="radio" name="gender" value="male" required>Male
+				</div>
+				<div>
+					<input type="radio" name="gender" value="female" required>Female
+				</div>
+				<div>
+					<input type="radio" name="gender" value="others" required>Others
+				</div>
+			</div>
+			<br> <br>
+			Date of Birth: <input class="box" type="date" name="dob">
+			<br> <br> <br>
+			<div class="sub_cal_btn">
+				<button type="submit">Submit</button> <button type="reset">Cancel</button>
+			</div>
+		</div>
+	</form>
+</body>
+
+</html>
